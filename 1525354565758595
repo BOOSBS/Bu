@@ -434,7 +434,7 @@ mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.Req
 Tab:AddButton({
   Name = "甩人",
   Callback = function()
-  loadstring(game:HttpGet("https://pastefy.app/8B4iDhvf/raw"))()
+  loadstring(game:HttpGet("https://pastebin.com/raw/L9QBifcX"))()
   end
 })
 
