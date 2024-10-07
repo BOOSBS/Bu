@@ -538,6 +538,13 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+  Name = "让走路和跳跃变卡(对别人没影响)",
+  Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()
+  end
+})
+
+Tab:AddButton({
   Name = "滚动",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOOSBS/111/refs/heads/main/192"))()
