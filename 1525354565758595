@@ -538,6 +538,13 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+  Name = "滚动",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOOSBS/111/refs/heads/main/192"))()
+  end
+})
+
+Tab:AddButton({
   Name = "动作",
   Callback = function()
 
