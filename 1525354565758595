@@ -545,7 +545,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BOOSBS/111/refs/heads
 })
 
 Tab:AddButton({
-  Name = "动作",
+  Name = "动画包",
   Callback = function()
 
 loadstring(game:HttpGet("https://pastebin.com/raw/fTsp2ZgP"))()
