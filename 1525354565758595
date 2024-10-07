@@ -524,6 +524,13 @@ loadstring(game:HttpGet("https://pastebin.com/raw/gNqZiexm"))()
   end
 })
 
+Tab:AddButton({
+  Name = "动作(按，开启)",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ws8cJmTD"))()
+  end
+})
+
 local Tab = Window:MakeTab({
 	Name = "通用4",
 	Icon = "rbxassetid://7734068321",
