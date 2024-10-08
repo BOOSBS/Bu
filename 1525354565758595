@@ -1251,18 +1251,6 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/EntitySpawner/main/doors(orionlib).lua"))()
   	end    
 })
-Tab:AddButton({
-  Name = "战争大亨(中文)",
-  Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/ohiojjj/78/main/.github/workflows/Protected_5786868815098093.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "压力(中文)",
-  Callback = function()
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/ohiojjj/78/main/.github/workflows/Protected_5509067665689579.lua'))()
-  end
-})
 
 Tab:AddButton({
   Name = "俄亥俄州",
