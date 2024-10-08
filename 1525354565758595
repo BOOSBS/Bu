@@ -603,6 +603,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/musi
     end
 })
 
+Tab:AddButton({
+	Name = "踏空行走",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+	end
+})
+
 local Tab = Window:MakeTab({
 	Name = "黑洞脚本合集(全部可用)",
 	Icon = "rbxassetid://7734068321",
