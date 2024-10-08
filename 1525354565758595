@@ -496,6 +496,13 @@ loadstring(game:HttpGet("https://pastebin.com/raw/CAQ9x4A7"))()
 })
 
 Tab:AddButton({
+  Name = "刷道具",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/wT1aKD4B"))()
+  end
+})
+
+Tab:AddButton({
 	Name = "爬墙",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
