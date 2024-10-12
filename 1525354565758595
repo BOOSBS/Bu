@@ -1289,9 +1289,55 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://7734068321",
     PremiumOnly = false
 })
+Tab:AddButton({
+      Name = "恢复默认",
+      Callback = function()
+        game.Lighting.Ambient = Color3.new(0, 0, 0)
+      end
+    })
+
 
 Tab:AddButton({
-  Name = "红色滤镜",
+      Name = "亮度1",
+      Callback = function()
+        game.Lighting.Ambient = Color3.new(1, 1, 1)
+      end
+    })
+Tab:AddButton({
+      Name = "亮度2",
+      Callback = function()
+        game.Lighting.Ambient = Color3.new(2, 2, 2)
+      end
+    })
+
+Tab:AddButton({
+      Name = "亮度3",
+      Callback = function()
+        game.Lighting.Ambient = Color3.new(3, 3, 3)
+      end
+    })
+
+Tab:AddButton({
+	Name = "红色",
+	Callback = function()
+game.Lighting.Ambient = Color3.new(1, 0, 0)
+end
+})    
+Tab:AddButton({
+	Name = "绿色",
+	Callback = function()
+game.Lighting.Ambient = Color3.new(0, 1, 0)
+end
+})    
+
+Tab:AddButton({
+      Name = "蓝色",
+      Callback = function()
+        game.Lighting.Ambient = Color3.new(0, 0, 1)
+      end
+    })
+Tab:AddButton({
+  Name = "红色(2)",
   Default = false,
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
