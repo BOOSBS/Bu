@@ -392,20 +392,6 @@ loadstring(game:HttpGet("https://pastebin.com/raw/Cqtv7Tc8"))()
   end
 })
 
-Tab:AddButton({
-  Name = "光影(1)",
-  Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/gUceVJig'))()
-  end
-})
-
-Tab:AddButton({
-  Name = "光影C2)",
-  Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-  end
-})
-
 local Tab = Window:MakeTab({
 	Name = "通用2",
 	Icon = "rbxassetid://7734068321",
@@ -1297,6 +1283,58 @@ Tab:AddLabel("普通黑洞2+所有黑洞=超级黑洞")
 Tab:AddLabel("超级黑洞+辅助黑洞=最强黑洞")
 Tab:AddLabel("全部黑洞通用融合表")
 Tab:AddLabel("👆以上为亲身测试得出的结论☝")
+
+local Tab = Window:MakeTab({
+    Name = "滤镜与光影",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "红色滤镜",
+  Default = false,
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "美丽天空（带动态阴影）",
+  Callback = function()
+    -- Roblox Graphics Enhancher
+    local light = game.Lighting
+    for i, v in pairs(light:GetChildren()) do
+      v:Destroy()
+    end
+
+    local ter = workspace.Terrain
+    local color = Instance.new("ColorCorrectionEffect")
+    local bloom = Instance.new("BloomEffect")
+    local sun = Instance.new("SunRaysEffect")
+    local blur = Inst
+  end
+})
+
+Tab:AddButton({
+  Name = "光影(1)",
+  Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/gUceVJig'))()
+  end
+})
+
+Tab:AddButton({
+  Name = "光影(2)",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "光影(3)",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+  end
+})
 
 local Tab = Window:MakeTab({
     Name = "其他脚本",
