@@ -252,6 +252,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScri
   end
 })
 
+Tab:AddToggle({
+  Name = "秒杀有血量的NPC",
+  Default = false,
+  Callback = function(Value)
+  if Value then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WSbuq/-/main/killNPC"))()
+    else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WSbuq/-/main/killNPC1"))()
+  end
+end
+})
+
 Tab:AddButton({
   Name = "吸人(一局只能吸一次)",
   Callback = function()
