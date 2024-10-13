@@ -131,13 +131,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-      Name = "位置",
-      Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/WSbuq/-/main/%E4%BD%8D%E7%BD%AE%E4%BB%AA"))()
-      end
-    })
-
-Tab:AddButton({
   Name = "帧率显示",
   Callback = function()
  -- Gui to Lua 
@@ -520,6 +513,14 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/wT1aKD4B"))()
   end
 })
+
+Tab:AddButton({
+      Name = "位置",
+      Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZJeTvyzG"))()
+      end
+    })
+
 
 Tab:AddButton({
 	Name = "爬墙",
