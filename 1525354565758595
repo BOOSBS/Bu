@@ -265,6 +265,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScri
 })
 
 Tab:AddButton({
+  Name = "阿尔宙斯注入器",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  end
+})
+
+Tab:AddButton({
   Name = "吸人(一局只能吸一次)",
   Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/PVPFXqtH'))()
