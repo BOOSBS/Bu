@@ -1195,7 +1195,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BOOSBS/666/refs/heads
 })
 
 Tab:AddButton({
-  Name = "黑洞脚本(第8种)(传送型黑洞)",
+  Name = "黑洞脚本(第8种)(传送型黑洞)(别人看不见)",
   Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/U29jR1Cf"))()
   end
