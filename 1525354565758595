@@ -534,9 +534,8 @@ Tab:AddButton({
       Name = "位置",
       Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/ZJeTvyzG"))()
-      end
-    })
-
+      end    
+})
 
 Tab:AddButton({
 	Name = "爬墙",
@@ -558,6 +557,16 @@ Tab:AddButton({
   loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
   end
 })
+
+Tab:AddButton({
+	Name = "键盘脚本(第2种)",
+	Callback = function()
+	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+
+end
+})
+
 Tab:AddButton({
   Name = "飞车",
   Callback = function()
