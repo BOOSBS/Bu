@@ -472,6 +472,13 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XmcMKfMV"))()
   end
 })
 
+Tab:AddButton({
+  Name = "灵魂出窍",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ahK5jRxM"))()
+  end
+})
+
 local Tab = Window:MakeTab({
 	Name = "通用3",
 	Icon = "rbxassetid://7734068321",
