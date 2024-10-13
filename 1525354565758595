@@ -388,7 +388,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
 Tab:AddButton({
   Name = "锁定视角",
   Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/Cqtv7Tc8"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/gdLR5Z7X"))()
   end
 })
 
@@ -505,6 +505,15 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/CAQ9x4A7"))()
 
     end
+})
+
+Tab:AddButton({
+	Name = "选人甩飞（需要输入别人的名字）",
+	Callback = function()
+	
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()
+
+end
 })
 
 Tab:AddButton({
