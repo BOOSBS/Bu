@@ -1154,7 +1154,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/qPcm2zPy"))()
 })
 
 Tab:AddButton({
-  Name = "黑洞脚本(第7种)(环绕型)",
+  Name = "黑洞脚本(第7种)(环绕V2)",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOOSBS/666/refs/heads/main/656"))()
   end
@@ -1164,6 +1164,13 @@ Tab:AddButton({
   Name = "黑洞脚本(第8种)(传送型黑洞)",
   Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/U29jR1Cf"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "黑洞脚本(第9种)(环绕V3)",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QcLFRTxe"))()
   end
 })
 
