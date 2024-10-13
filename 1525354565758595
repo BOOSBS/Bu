@@ -1264,6 +1264,16 @@ Tab:AddLabel("P - 使物体悬浮在空中")
 Tab:AddLabel("X - 走得更远一点")
 Tab:AddLabel("L - 使方块变直并锁定在前部")
 
+Tab:AddButton({
+  Name = "让手上的道具飘起来",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/WmD8MuSx"))()
+  end
+})
+
+Tab:AddLabel("J-飞起来")
+Tab:AddLabel("K-回到手中")
+
 local Tab = Window:MakeTab({
 	Name = "变身(只能自己看)",
 	Icon = "rbxassetid://7734068321",
