@@ -1537,6 +1537,36 @@ audioPlayer:Play()
 end
 })
 
+Tab:AddButton({
+  Name = "彩虹瀑布",
+  Callback = function()
+local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1837879082"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+
+Tab:AddButton({
+  Name = "义勇军进行曲",
+  Callback = function()
+local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1845918434"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+
+Tab:AddButton({
+  Name = "防空警报",
+  Callback = function()
+local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://792323017"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+
 local Tab = Window:MakeTab({
     Name = "其他脚本",
     Icon = "rbxassetid://7734068321",
