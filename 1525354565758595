@@ -386,13 +386,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ocfi/Draw-To-Chat-Obf
 })
 
 Tab:AddButton({
-	Name = "音乐轰炸器",
-	Callback = function()		
-loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/%E8%BD%B0%E7%82%B8.lua"))()
-    end
-})
-
-Tab:AddButton({
   Name = "锁定视角",
   Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/gdLR5Z7X"))()
@@ -430,9 +423,11 @@ end
 Tab:AddButton({
 	Name = "部分技能无CD",
 	Callback = function()
+
 g = hookfunction(wait, function(seconds)
 return g(0)
 end)
+
 end
 })
 
@@ -692,13 +687,6 @@ Tab:AddButton({
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
    end
-})
-
-Tab:AddButton({
-	Name = "音乐",
-	Callback = function()		
-loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/music.lua"))()
-    end
 })
 
 Tab:AddButton({
@@ -1341,6 +1329,14 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://7734068321",
     PremiumOnly = false
 })
+
+Tab:AddButton({
+	Name = "自定义画质包",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+end
+})
+
 Tab:AddButton({
       Name = "恢复默认",
       Callback = function()
@@ -1432,6 +1428,113 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
   end
+})
+
+local Tab = Window:MakeTab({
+    Name = "音乐只能自己听",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "自定义音乐",
+	Callback = function()		
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/music.lua"))()
+    end
+})
+
+Tab:AddButton({
+	Name = "音乐轰炸器",
+	Callback = function()		
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/%E8%BD%B0%E7%82%B8.lua"))()
+    end
+})
+
+Tab:AddButton({
+
+	Name = "color",
+
+	Callback = function()
+
+local audioPlayer : AudioPlayer = Instance.new("AudioPlayer")
+audioPlayer.Parent = workspace
+audioPlayer.AssetId = "rbxassetid://7023828725"
+
+local deviceOutput = Instance.new("AudioDeviceOutput")
+deviceOutput.Parent = workspace
+
+local wire = Instance.new("Wire")
+wire.Parent = workspace
+
+wire.SourceInstance = audioPlayer
+wire.TargetInstance = deviceOutput
+
+audioPlayer:Play()
+
+    end
+})
+
+Tab:AddButton({
+	Name = "happy song",
+	Callback = function()
+
+local audioPlayer : AudioPlayer = Instance.new("AudioPlayer")
+audioPlayer.Parent = workspace
+audioPlayer.AssetId = "rbxassetid://1843404009"
+
+local deviceOutput = Instance.new("AudioDeviceOutput")
+deviceOutput.Parent = workspace
+
+local wire = Instance.new("Wire")
+wire.Parent = workspace
+
+wire.SourceInstance = audioPlayer
+wire.TargetInstance = deviceOutput
+
+audioPlayer:Play()
+    end
+})
+
+Tab:AddButton({
+	Name = "World-Hang up",
+	Callback = function()
+
+local audioPlayer : AudioPlayer = Instance.new("AudioPlayer")
+audioPlayer.Parent = workspace
+audioPlayer.AssetId = "rbxassetid://5410084188"
+
+local deviceOutput = Instance.new("AudioDeviceOutput")
+deviceOutput.Parent = workspace
+
+local wire = Instance.new("Wire")
+wire.Parent = workspace
+
+wire.SourceInstance = audioPlayer
+wire.TargetInstance = deviceOutput
+
+audioPlayer:Play()
+    end
+})
+
+Tab:AddButton({
+	Name = "雨中牛郎",
+	Callback = function()
+
+local audioPlayer : AudioPlayer = Instance.new("AudioPlayer")
+audioPlayer.Parent = workspace
+audioPlayer.AssetId = "rbxassetid://16831108393"
+
+local deviceOutput = Instance.new("AudioDeviceOutput")
+deviceOutput.Parent = workspace
+
+local wire = Instance.new("Wire")
+wire.Parent = workspace
+
+wire.SourceInstance = audioPlayer
+wire.TargetInstance = deviceOutput
+
+audioPlayer:Play()
+end
 })
 
 local Tab = Window:MakeTab({
