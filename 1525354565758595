@@ -430,17 +430,6 @@ end
 })
 
 Tab:AddButton({
-	Name = "部分技能无CD",
-	Callback = function()
-
-g = hookfunction(wait, function(seconds)
-return g(0)
-end)
-
-end
-})
-
-Tab:AddButton({
   Name = "透视",
   Callback = function()
               loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
