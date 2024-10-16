@@ -17,7 +17,7 @@ print("反挂机开启")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/iXGNieAz'))()
-local Window = OrionLib:MakeWindow({Name = "黑洞中心(BS)", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用黑洞中心", ConfigFolder = "黑洞中心"})
+local Window = OrionLib:MakeWindow({Name = "黑洞中心(BS)", HidePremium = false, SaveConfig = true,IntroText = "黑洞中心启动", ConfigFolder = "黑洞中心"})
 
 local Tab = Window:MakeTab({
     Name = "我想对你们说的话",
@@ -490,10 +490,53 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+  Name = "0范围",
+
+  Callback = function()
+_G.HeadSize = 0
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+
+  end
+})
+
+Tab:AddButton({
   Name = "普通范围",
   Callback = function ()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
+_G.HeadSize = 30
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
 
   end
 })
@@ -502,7 +545,24 @@ Tab:AddButton({
   Name = "中等范围",
   Callback = function ()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+_G.HeadSize = 100
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
 
   end
 })
@@ -511,7 +571,24 @@ Tab:AddButton({
     Name="全图范围",
     Callback=function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+_G.HeadSize = 500
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
 
     end
 })
@@ -520,7 +597,24 @@ Tab:AddButton({
     Name="终极范围",
     Callback=function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/CAQ9x4A7"))()
+_G.HeadSize = 2500
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
 
     end
 })
